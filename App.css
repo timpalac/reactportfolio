@@ -1,0 +1,60 @@
+body {
+    background: url(https://www.timpalac.com/includes/img/bg-repeat.jpg);
+}
+
+.App {
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.App-title {
+    font-size: 32px;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    color: #999;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Telex', sans-serif;
+}
+
+h1 {
+    color: #317eac;
+    padding-top: 15px;
+    font-size: 2.25rem;
+}
+
+h2 {
+    color: #2fa4e7;
+    font-size: 1.85rem;
+}
+
+h3 {
+    color: #666;
+    font-size: 1.35rem;
+}
+
+a {
+    color: #2fa4e7;
+}
+
+a:hover {
+    color: #157ab5;
+}
+
+header .nav-link {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 14px;
+}
+
+footer .nav-link {
+    padding-bottom: 0;
+}
