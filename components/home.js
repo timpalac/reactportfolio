@@ -14,7 +14,7 @@ class Home extends Component {
 
 	componentDidMount() {
 		let self = this;
-		axios.get('http://localhost/timpalac/wp-json/wp/v2/pages/2').then(function (response) {
+		axios.get('//www.timpalac.com/wordpress/wp-json/wp/v2/pages/2').then(function (response) {
 			self.setState({title: response.data.title.rendered, content: response.data.content.rendered});
 			self.setState({portfolioTitle: response.data.acf.portfolio_title, portfolioContent: response.data.acf.portfolio_text, items: response.data.acf.portfolio_items.sort((a,b) => a.ID > b.ID).map((item) =>
 					<PortfolioItem key={item.ID} id={item.ID} name={item.post_title} description={item.post_content} />

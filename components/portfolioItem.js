@@ -7,7 +7,7 @@ class PortfolioItem extends Component {
 
 	componentDidMount() {
 		let self = this;
-		axios.get('http://localhost/timpalac/wp-json/wp/v2/posts/' + this.props.id + '?_embed').then(function (response) {
+		axios.get('//www.timpalac.com/wordpress/wp-json/wp/v2/posts/' + this.props.id + '?_embed').then(function (response) {
 			self.setState({image: response.data._embedded['wp:featuredmedia'][0].source_url});
 		}).catch(function (error) {
 			console.log(error);
