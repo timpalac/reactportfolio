@@ -13,10 +13,8 @@ body {
     font-family: 'Merienda', cursive;
     font-weight: bold;
     color: #999;
-}
 
-@media(min-width:768px) {
-    .App-title {
+    @media(min-width:768px) {
         padding-bottom: 15px;
     }
 }
@@ -48,16 +46,18 @@ a:hover {
     color: #157ab5;
 }
 
-header .nav-link {
-    font-size: 1.2rem;
+header {
+    .nav-link {
+        font-size: 1.2rem;
+    }
 }
 
 footer {
     margin-top: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
     font-size: 14px;
-}
 
-footer .nav-link {
-    padding-bottom: 0;
+    .nav-link {
+        padding-bottom: 0;
+    }
 }

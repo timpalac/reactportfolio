@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
-import './portfolioItem.css';
+import './portfolioItem.scss';
 
 class PortfolioItem extends Component {
 	state = {};
