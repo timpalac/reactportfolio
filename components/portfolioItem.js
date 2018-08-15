@@ -5,6 +5,12 @@ import './portfolioItem.scss';
 class PortfolioItem extends Component {
 	state = {};
 
+	createMarkup(htmlContent) {
+		return {
+			__html: htmlContent
+		}
+	}
+
 	componentDidMount() {
 		let self = this;
 		axios.get('//www.timpalac.com/wordpress/wp-json/wp/v2/posts/' + this.props.id + '?_embed').then(function (response) {
@@ -18,7 +24,7 @@ class PortfolioItem extends Component {
 			<div className="portfolio-item col-sm-12 col-md-4 pb-4">
 				<p className="border img-wrapper"><img src={this.state.image} alt={this.props.name} className="img-fluid" /></p>
 				<h3>{this.props.name}</h3>
-				<p>{this.props.description}</p>
+				<p dangerouslySetInnerHTML={this.createMarkup(this.props.description)} />
 			</div>
 		);
 	}
